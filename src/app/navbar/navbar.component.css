@@ -1,0 +1,26 @@
+.bgg{background-color:#2C3E50}
+nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav .flex-grow {
+    flex-grow: 1;
+  }
+  
+  nav .flex.justify-end {
+    justify-content: flex-end;
+  }
+  
+  nav a {
+    transition: color 0.2s ease;
+  }
+  
+  nav a:hover {
+    color: #1ABC9C; /* adjust the hover color to match your design */
+  }
+  
+  nav a.active {
+    color: #1ABC9C; /* adjust the active color to match your design */
+    /* add a bottom border to the active link */
+  }

@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  position: relative; /* add this line */
+  width: 33%; /* adjust the width to make 3 images per row */
+  /* add some margin for spacing */
+}
+
+.image-container img {
+  width: 100%; /* make the image take up the full width of the container */
+  height: auto; /* maintain the aspect ratio of the image */
+}
+
+.image-container:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1ABC9C; /* add the hover layer with the desired color */
+  opacity: 0.8; /* adjust the opacity to your liking */
+}
+
+.image-container:hover::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFFFFF; /* add the white + symbol */
+}
+#popupWindow {
+  position: fixed;
+  width: 1009px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:rgba(0, 0, 255, 0.5);
+margin:9px 0 0 0;
+padding: 110 10 10 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#popupImage {
+  max-width: 80%;
+  max-height: 80vh;
+}
+
+#closeButton {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #1ABC9C;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}

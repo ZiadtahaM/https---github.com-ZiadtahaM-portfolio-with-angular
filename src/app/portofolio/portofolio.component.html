@@ -1,0 +1,33 @@
+<h1 class="text-2xl font-bold mb-6 mt-10 text-center">PORTFOLIO COMPONENT</h1>
+<div class="flex items-center justify-center">
+    <div class="w-20 h-0.5 bg-black mx-2"></div>
+    <div class="w-10"></div>
+    <span class="text-3xl mx-1">&#9733;</span>
+    <div class="w-10"></div>
+    <div class="w-20 h-0.5 bg-black mx-2"></div>
+  </div>
+<div class="container gap-1 m-2 py-5 px-10 ml-16">
+    <div class="image-container" (click)="openPopup('https://routeegy.github.io/startFramework/assets/images/poert1.png')">
+        <img src="https://routeegy.github.io/startFramework/assets/images/poert1.png" alt="Log Cabin">
+      </div>
+      
+      <div id="popupWindow" *ngIf="showPopup" class="hidden">
+        <img id="popupImage" [src]="popupImageSrc" alt="">
+        <button id="closeButton" (click)="closePopup()">Close</button>
+      </div>
+    <div class="image-container" (click)="openPopup('https://routeegy.github.io/startFramework/assets/images/port2.png')">
+        <img src="https://routeegy.github.io/startFramework/assets/images/port2.png" alt="Cake">
+    </div>
+    <div class="image-container" (click)="openPopup('https://routeegy.github.io/startFramework/assets/images/port3.png')">
+        <img src="https://routeegy.github.io/startFramework/assets/images/port3.png" alt="Tent">
+    </div>
+    <div class="image-container" (click)="openPopup('https://routeegy.github.io/startFramework/assets/images/poert1.png')">
+        <img src="https://routeegy.github.io/startFramework/assets/images/poert1.png" alt="Log Cabin">
+    </div>
+    <div class="image-container" (click)="openPopup('https://routeegy.github.io/startFramework/assets/images/port2.png')">
+        <img src="https://routeegy.github.io/startFramework/assets/images/port2.png" alt="Cake">
+    </div>
+    <div class="image-container" (click)="openPopup('https://routeegy.github.io/startFramework/assets/images/port3.png')">
+        <img src="https://routeegy.github.io/startFramework/assets/images/port3.png" alt="Tent">
+    </div>
+</div>

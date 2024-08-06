@@ -1,0 +1,14 @@
+
+.circle-border {
+    border-radius: 50%;
+    border: 2px solid white; /* Adjust border width as needed */
+  }
+/* Footer positioning */
+.footerr {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  

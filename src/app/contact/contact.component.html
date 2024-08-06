@@ -1,0 +1,85 @@
+
+
+
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-bottom: 1px solid #ddd;
+      background: transparent;
+      font-size: 16px;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+      outline: none;
+      border-bottom-color: #337ab7;
+    }
+    button {
+      background-color: #337ab7;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+    }
+    button:hover {
+      background-color: #21618c;
+    }
+  </style>
+
+  <div class="container">
+    <h1 class="text-center font-bold">Contact section</h1>
+    <div class="flex items-center justify-center">
+      <div class="w-20 h-0.5 bg-black mx-2"></div>
+      <div class="w-10"></div>
+      <span class="text-3xl mx-1">&#9733;</span>
+      <div class="w-10"></div>
+      <div class="w-20 h-0.5 bg-black mx-2"></div>
+    </div>
+    <form>
+      <label for="userName">Username:</label>
+      <input type="text" id="userName" name="userName" placeholder="Enter your username">
+
+      <label for="userAge">Age:</label>
+      <input type="text" id="userAge" name="userAge" placeholder="Enter your age">
+
+      <label for="userEmail">Email:</label>
+      <input type="email" id="userEmail" name="userEmail" placeholder="Enter your email">
+
+      <label for="userPassword">Password:</label>
+      <input type="password" id="userPassword" name="userPassword" placeholder="Enter your password">
+
+      <button class="w-fit" type="submit">Send Message</button>
+    </form>
+  </div>
